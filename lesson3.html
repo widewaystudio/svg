@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程3</title>
+<style type="text/css">
+	svg{
+		width:500px;
+		height:5px;
+	}
+	path{
+		stroke-width:2px;
+		stroke-linecap:round;
+		stroke-linejoin:round;
+		stroke:#123;		
+	}
+	.line{
+		stroke-dasharray:500px;
+		stroke-dashoffset:0px;
+		d:path('M0 2 L500 2');
+		animation:move 1s linear infinite alternate;
+	}
+	@keyframes move{
+		0%{stroke-dashoffset:0px}
+		100%{stroke-dashoffset:500px}
+	}
+	.yibiaopan{
+		width:400px;
+		height:400px;
+		border:1px solid #123;	
+
+	}
+	.dashBoard,.dashBoardU{
+		d:path('M130 380 A150 150 0 1 1 280 380');
+		fill:transparent;
+		stroke:#ddd;
+		stroke-width:10px;
+		stroke-linecap:round;
+	}
+	.dashBoardU{
+		stroke:#ff00ff;
+		stroke-dasharray:1000px;
+		stroke-dashoffset:1000px;
+	}
+	input{
+		width:300px;
+		height:30px;
+		font-size:20px;
+		line-height:30px;
+		padding-left:2px;
+		display:block;
+        margin-bottom:20px;
+		}
+      .active{
+      	transition:stroke-dashoffset linear 1s;
+      }
+	</style>
+</head>
+<body>
+	<div class="wraper">
+		<svg>
+		<path class='line' ></path>
+	</svg>
+	<h1>仪表盘样式</h1>
+	<input type="text" id='in'>
+	<svg class='yibiaopan'>
+		<path class="dashBoard"></path>
+		<path class="dashBoardU"></path>
+	</svg>
+	</div>
+	<script type="text/javascript">
+		var Dom = document.getElementsByClassName('dashBoard')[0],
+		    Dom1 = document.getElementsByClassName('dashBoardU')[0],
+		   OIn = document.getElementById('in');
+		   var totalLength = Dom.getTotalLength();
+		   OIn.onblur = function(){
+             var Temp =1000 - totalLength * parseFloat(this.value) / 100;
+              Dom1.classList.add('active');
+         	 Dom1.style.strokeDashoffset = Temp + "px";
+
+         }
+          OIn.onfocus = function(){
+          	this.value = '';
+          	Dom1.classList.remove('active');
+           Dom1.style.strokeDashoffset = '1000px';
+          }
+
+	</script>
+</body>
+</html>

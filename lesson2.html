@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>课程2</title>
+	<style type="text/css">
+	     svg{
+	     	height:500px;
+	     	width:500px;
+	     	background-repeat:no-repeat;
+	     	background-position:center;
+	     }
+	     svg *{
+	     	stroke:#000;
+	     	stroke-width:2px;
+	     	stroke-linecap:round;
+	     }
+		.fir{
+			border:1px solid #888;
+			background-image:url(image/timg.jpg);
+
+
+		}
+		.sec{
+			border:1px solid #888;
+		}
+
+		.lan{
+			fill:#4a94d9;
+		}
+		.bai{
+			fill:#ffffff;
+		}
+		.color1{
+			fill:#d20203;
+		}
+        .color2{
+        	fill:#f7df5e;
+        }
+        .color3{
+        	fill:#f37715;
+        }
+        .face{
+        	d:path('M 163 256 C71 208 69 25 248 22 C366 15 464 146 338 256');
+        }
+        .face1{
+        	d:path('M 163 256 C87 218 80 89 188 76 C300 50 449.5 113 325 256');
+        }
+		.Le{
+			rx: 28px;
+		    ry: 37px;
+		    cx: 201px;
+		    cy: 67px;
+		}
+		.Lp{
+			fill:transparent;
+			d:path('M 200 80 Q210 65 220 80');
+			stroke-width:5px;
+			stroke-linecap:round;
+
+		}
+		.Re{
+			rx: 31px;
+		    ry: 38px;
+		    cx: 261px;
+		    cy: 67px;
+		}
+		.Rp{
+			rx:6px;
+			ry:9px;
+			cx:244px;
+			cy:80px;
+			fill:transparent;
+			stroke-width:6px;
+			}
+        .nose{
+        	r:16px;
+			cx:220px;
+			cy:107px;
+        }
+        .noseL{
+         d:path('M 219 121 Q215 147 217 166'); 
+        }
+        .beard{
+         d:path('M 124 92 L 179 122');
+        }
+        .beard2{
+         d:path('M 110 125 L 177 133');
+        } 
+        .beard3{
+         d:path('M 113 160 L 177 142');
+        }
+         .beardr{
+         d:path('M 336 81 L 265 117');
+        }
+         .beardr2{
+         d:path('M 351 118 L 269 127');
+        } 
+        .beardr3{
+         d:path('M 346 157 L 268 139');
+        }
+        .mouth{
+        	d:path('M 143 131 C101 114,109 174,140 172');
+        	fill:transparent;
+        	stroke-width:2px;
+        	stroke-linecap:round;
+        }
+        .lips{
+        	d:path('M 140 172 Q231 165,334 147 C354 210,220 327,140 172');
+
+        }
+        .tongue{
+        	d:path('M192 233 C207 156,306 167,323 199 C300 242,240 267,192 233');
+        }
+        .armR{
+        	d:path('M163 260 Q118 234 113 229 T87 245 Q86 263,151 318');
+        }
+        .armL{
+        	d:path('M335 267 Q357 275,382 317 T357 352 Q346 349,322 326');
+        }
+        .handr{
+        	r:28px;
+        	cx:87px;
+        	cy:221px;
+        	}
+        .handl{
+            r:28px;
+        	cx:380px;
+        	cy:353px;
+        }
+        .body{
+          d:path('M162 256 Q140 355,160 417 T335 442 Q348 365, 340 316 T 338 256');
+        }
+        .footR{
+        	d:path('M165 428 Q171 436,218 432 T231 464 C230 484,148 466,146 454 S142 432 165 428');
+        }
+        .footL{
+        	d:path('M241 439 Q299 446,316 445 T336 442 C383 481,287 493,245 478 S247 431,241 439');
+        }
+        .dudou{
+        	d:path('M188 267 C165 270,139 321,154 359 S219 420,280 386 C303 369,334 320,279 270');
+        }
+        .dudouk{
+        	d:path('M158 325 Q169 389,227 382 T287 324 z');
+         }
+         .bell{
+         	d:path('M217 265 C177 278,201 315,224 306 S239 265,217 265');
+         }
+         .bellL{
+         	d:path('M199 277 C204 275,211 273,225 275 S241 284,232 283 Q206 275,195 282 z');
+         }
+         .point{
+         	r:4px;
+         	cx:214px;
+         	cy:289px;
+            fill:#756663;
+         }
+         polyline{
+         	stroke-linejoin:round;
+         	fill:transparent;
+         	stroke-linecap:round;
+         }
+         .tail{
+         	r:16px;
+         	cx:365px;
+         	cy:392px;
+         }
+         .neck{
+         	d:path('M163 256 Q348 256 337 257 Q342 264 333 268 T161 268');
+
+         }
+         .lineb{
+            fill:transparent;
+
+            d:path('M214 406 Q229 412 236 416 T243 438')
+         }
+	</style>
+</head>
+<body>
+	<svg class='fir' width='500' height='500'>
+		<path d='M 100 100 A 70 120 90 0 0 150 200'></path>
+	</svg>
+    <svg class="sec">
+     <path class='face lan'></path>
+     <path class='face1 bai'></path>
+     <ellipse class='Le bai'></ellipse>
+     <ellipse class="Re bai"></ellipse>
+     <path class='Lp'></path>
+     <ellipse class='Rp'></ellipse>
+     <path class='noseL'></path>
+     <circle class='nose color1'></circle>     
+     <path class='mouth'></path>
+     <path class='lips color1'></path>
+     <path class='tongue color2'></path>
+     <path class='beard'></path>
+     <path class='beard2'></path>
+     <path class='beard3'></path>
+     <path class='beardr'></path>
+     <path class='beardr2'></path>
+     <path class='beardr3'></path>
+     <path class='armR lan'></path>
+     <circle class='handr bai'></circle>
+     <line x1='341' y1='385' x2='350' y2='387'></line>
+     <path class='body lan'></path>
+     <path class='footR bai'></path>
+     <path class='footL bai'></path>
+     <circle class='tail color1'></circle>
+     <path class='armL lan'></path>
+     <circle class='handl bai'></circle>
+     <circle class="dudou bai"></circle>
+     <path class="dudou bai"></path>
+     <path class="dudouk bai"></path>
+     <path class='neck color1'></path>
+     <path class="bell color2"></path>
+     <path class="bellL color2"></path>
+     <polyline points='214 293,213 297,213 301,214 307'></polyline>
+     <circle class='point'></circle> 
+     <path class="lineb" ></path>       
+     
+     
+    </svg>
+</body>
+</html>
